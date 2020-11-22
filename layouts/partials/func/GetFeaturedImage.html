@@ -19,8 +19,8 @@
 {{ $linkToCover := "" }}
 
 {{/* Use the value from front matter if present */}}
-{{ if .Params.featured_image }}
-    {{ $linkToCover = .Params.featured_image }}
+{{ if .Params.image }}
+    {{ $linkToCover = .Params.image }}
 
 {{/* Find the first image with 'cover' in the name in this page bundle. */}}
 {{ else }}
